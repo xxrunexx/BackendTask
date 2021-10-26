@@ -7,26 +7,26 @@ import (
 
 func FindMinAndMax(arr []int) string {
 	// your code here
-	maxi, max := 0, 0
+	maxIndex, max := 0, 0
 	for index, val := range arr {
 		if max > val {
 			continue
 		} else if max < val {
-			maxi = index
+			maxIndex = index
 			max = val
 		}
 	}
 
-	mini, min := 0, 0
+	minIndex, min := 0, 0
 	for index, val := range arr {
 		if min < val {
 			continue
 		} else if min > val {
-			mini = index
+			minIndex = index
 			min = val
 		}
 	}
-	hasil := "min: " + strconv.Itoa(min) + " index: " + strconv.Itoa(mini) + " max: " + strconv.Itoa(max) + " index: " + strconv.Itoa(maxi)
+	hasil := "min: " + strconv.Itoa(min) + " index: " + strconv.Itoa(minIndex) + " max: " + strconv.Itoa(max) + " index: " + strconv.Itoa(maxIndex)
 	return hasil
 }
 

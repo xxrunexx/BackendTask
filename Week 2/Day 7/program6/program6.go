@@ -7,6 +7,7 @@ import (
 
 func MaximumBuyProduct(money int, productPrice []int) {
 	sort.Ints(productPrice)
+	// fmt.Print(productPrice)
 	var total int
 	for _, val := range productPrice {
 		if money < val {

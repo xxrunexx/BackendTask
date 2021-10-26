@@ -24,14 +24,14 @@ func primaSegiEmpat(high, wide, start int) {
 			fmt.Println()
 		}
 		sum += prime[i]
-		fmt.Printf("%d ", prime[i])
+		fmt.Printf("%d\t", prime[i])
 		i++
 	}
 	fmt.Printf("\n%d\n", sum)
 }
 
 func primeNumber(number int) bool {
-	if number <= 1 {
+	if number < 2 {
 		return false
 	} else if number == 2 {
 		return true
