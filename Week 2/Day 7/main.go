@@ -6,7 +6,7 @@ import (
 	"sort"
 )
 
-func factorial(n int) int {
+func factorial(n int) int { //Fungsi Rekursif
 	if n == 1 {
 		return 1
 	} else {
