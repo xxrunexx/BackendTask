@@ -4,19 +4,31 @@ import (
 	"fmt"
 )
 
+type pairCards struct {
+	card1 int
+	card2 int
+}
+
+type output interface{}
+
 func playingDomino(cards [][]int, deck []int) interface{} {
 	closedCard := true
+	var card []pairCards
 	for i, _ := range cards {
 		if cards[i][0] == deck[1] || cards[i][1] == deck[1] {
-			fmt.Print("[", cards[i][0], ", ", cards[i][1], "] ")
+			card = append(card, pairCards{cards[i][0], cards[i][1]})
 			closedCard = false
 			break
 		}
 	}
-	if closedCard {
-		fmt.Print("Tutup Kartu")
+	var hasil []output
+	for _, i := range card {
+		hasil = append(hasil, i.card1, i.card2)
 	}
-	return ""
+	if closedCard {
+		return "Tutup Kartu"
+	}
+	return hasil
 }
 
 func main() {
