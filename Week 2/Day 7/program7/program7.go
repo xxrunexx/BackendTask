@@ -11,14 +11,12 @@ func playingDomino(cards [][]int, deck []int) interface{} {
 			fmt.Print("[", cards[i][0], ", ", cards[i][1], "] ")
 			closedCard = false
 			break
-		} else {
-			continue
-		}
-		if closedCard {
-			fmt.Print("Tutup Kartu")
 		}
 	}
-	return 1
+	if closedCard {
+		fmt.Print("Tutup Kartu")
+	}
+	return ""
 }
 
 func main() {
