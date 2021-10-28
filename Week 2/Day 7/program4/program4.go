@@ -13,7 +13,7 @@ func MaxSequence(arr []int) int {
 		return arr[0]
 	}
 	maxSum, result := arr[0], 0
-	for i := 0; i < len(arr); i++ {
+	for i := 0; i < len(arr)-1; i++ {
 		result += arr[i]
 		if result > maxSum {
 			maxSum = result
