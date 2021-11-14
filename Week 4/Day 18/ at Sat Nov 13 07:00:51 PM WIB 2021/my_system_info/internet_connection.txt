@@ -1,0 +1,8 @@
+PING google.com (142.250.203.142) 56(84) bytes of data.
+64 bytes from waw07s06-in-f14.1e100.net (142.250.203.142): icmp_seq=1 ttl=102 time=398 ms
+64 bytes from waw07s06-in-f14.1e100.net (142.250.203.142): icmp_seq=2 ttl=102 time=370 ms
+64 bytes from waw07s06-in-f14.1e100.net (142.250.203.142): icmp_seq=3 ttl=102 time=376 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2201ms
+rtt min/avg/max/mdev = 369.833/381.216/397.925/12.070 ms
